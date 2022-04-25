@@ -15,7 +15,6 @@ header a{
     background: red;
 }
 
-
 nav {
     background-color: black;
     color:white;
@@ -126,6 +125,12 @@ main#detalhesMain div#detalhes div.categorias{
     width: 30%;
 
 }
+main#detalhesMain div#detalhes div.categorias p{
+font-size: 80%;
+}
+   
+
+
 main#detalhesMain div#detalhes div.categorias .titulos{
     color:blue;
 }
