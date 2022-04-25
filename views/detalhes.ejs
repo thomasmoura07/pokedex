@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet">
+    <title>Detalhes</title>
+</head>
+<body>
+    <%- include("./partials/header.ejs") %> 
+    <%- include('./partials/nav.ejs') %> 
+    
+    <main id="detalhesMain">
+        <section id="detalhesSection">
+        <div id="detalhes">
+            <h1><%= pokedex.nome %> </h1>
+            <div id="img"><img src="<%= pokedex.img %>" alt=""></div>
+            <p id="descricao"><%= pokedex.descricao %> </p>
+            <div class="categorias">
+                <p class="titulos">CATEGORIA:</p>
+                <p><%= pokedex.categoria %></p>
+                <p class="titulos">HABIBLIDADE:</p>
+                <p><%= pokedex.habilidade %></p>
+                <p class="titulos">ALTURA:</p>
+                <p> <%= pokedex.altura %> </p>
+                <p class="titulos">PESO:</p>
+                <p><%= pokedex.peso %></p>
+              
+            </div>
+    
+        </div>
+     
+        </section>
+        
+    </main>
+  
+    
+    <%- include('./partials/footer.ejs') %> 
+</body>
+</html>

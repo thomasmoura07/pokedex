@@ -1,0 +1,28 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "dev":"nodemon -e js,html,css,ejs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasmoura07/pokedex.git"
+  },
+  "author": "Thomas Douglas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomasmoura07/pokedex/issues"
+  },
+  "homepage": "https://github.com/thomasmoura07/pokedex#readme",
+  "dependencies": {
+    "ejs": "^3.1.7",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
