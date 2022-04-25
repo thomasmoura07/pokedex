@@ -11,7 +11,7 @@ app.use(express.json())
 app.set('view engine','ejs')
 app.use(express.static(path.join(__dirname,"public")));
 
-let port = 3005;
+const port = process.env.PORT || 3000;
 app.listen(port,() => {console.log(`rodando na porta ${port}`)});
 
 
