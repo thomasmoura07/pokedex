@@ -50,11 +50,15 @@ const pokemons = [
       habilidade:'voar'
     }
   ]
+  let message =''
 
 //################ ROTAS ###############
 
 app.get('/', (req,res) => {
-    res.render("index.ejs",{pokemons}) 
+  setTimeout(() => {
+    message = "";
+  }, 1000);
+    res.render("index.ejs",{pokemons,message}) 
     });
 
 app.get('/detalhes/:id', (req, res) => {
@@ -65,17 +69,18 @@ app.get('/detalhes/:id', (req, res) => {
         }
     })
     console.log(pokedex)
-    res.render('detalhes.ejs',{pokedex})
+    res.render('detalhes.ejs',{pokedex,message})
 })
 
 app.get('/cadastro', (req,res) => {
-  res.render("cadastro.ejs") 
+  res.render("cadastro.ejs",{message}) 
   });
 
   app.post('/cadastro', (req, res) => {
     let i = pokemons[pokemons.length-1].id + 1
     const { nome,descricao,tipo,img,categoria,habilidade,altura,peso} = req.body
     pokemons.push({id: i, nome,descricao,tipo,img,categoria,habilidade,altura,peso })
+    message = `Pokémon registrado com sucesso !`;
     console.log(pokemons)
     res.redirect('/')
 })
