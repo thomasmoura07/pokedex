@@ -1,5 +1,8 @@
 import express from "express"
 import path from "path"
+import dotenv from 'dotenv'
+
+dotenv.config();
 
 const __dirname = path.resolve(path.dirname(''))
 
@@ -11,7 +14,7 @@ app.use(express.json())
 app.set('view engine','ejs')
 app.use(express.static(path.join(__dirname,"public")));
 
-const port = 3000 || 'https://pokedex-thomasmoura07.herokuapp.com/';
+const port = 3000 || process.env.PORT;
 app.listen(port,() => {console.log(`rodando na porta ${port}`)});
 
 
