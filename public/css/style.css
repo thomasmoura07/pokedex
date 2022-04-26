@@ -177,7 +177,17 @@ section#message {
     transform: scale(1.5);
   }
 
-form{
+
+
+
+
+
+
+
+
+
+
+  form{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -192,7 +202,10 @@ form fieldset#field_main label{
     width: 100%;
 }
 
+fieldset#field_main legend{
+    color:yellow;
 
+}
 
 
 
