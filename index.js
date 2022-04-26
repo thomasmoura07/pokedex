@@ -14,7 +14,7 @@ app.use(express.json())
 app.set('view engine','ejs')
 app.use(express.static(path.join(__dirname,"public")));
 
-const port = 3000 || process.env.PORT;
+const port = 3000 || 'https://vercel.com/thomasmoura07/pokedex/5r4Zfni7a9xGyNXwaMecer7Ub4Ca';
 app.listen(port,() => {console.log(`rodando na porta ${port}`)});
 
 
