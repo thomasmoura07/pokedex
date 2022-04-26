@@ -49,11 +49,13 @@ section#all-cards{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-end;
+    
 }
 
 section#all-cards a{
     text-decoration: none;
     color:white;
+   
 }
 
 section#all-cards div.card{
@@ -76,14 +78,15 @@ section#all-cards div.card p.descricao{
  
 footer{
     background-color: rgb(104, 104, 104);
-    height: 5%;
+    height: 10%;
     text-align: center;
 }
 footer a{
     text-decoration: none;
-    font-size: 100%;
+    font-size: 90%;
     color: white;
 }
+
 
 
 
@@ -139,6 +142,13 @@ main#detalhesMain div#detalhes div.categorias .titulos{
 
 
 
+
+
+
+
+
+
+
 section#message {
     padding: 1.5rem;
     background-color: rgb(197, 255, 214);
@@ -181,3 +191,35 @@ form fieldset#field_main label{
     flex-wrap: wrap;
     width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 700px) and (max-width: 1200px) {
+    section#all-cards div.card{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 175x;
+    width: 402px;
+    box-shadow: 4px 6px 5px 3px rgb(97, 97, 97);
+    padding:10px;
+    } 
+    nav ul li.menu{
+        font-size:115%;
+    }
+
+    
+  }

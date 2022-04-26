@@ -11,7 +11,7 @@ app.use(express.json())
 app.set('view engine','ejs')
 app.use(express.static(path.join(__dirname,"public")));
 
-const port = process.env.PORT || 3000;
+const port = 3000 || "https://damp-sands-37013.herokuapp.com/";
 app.listen(port,() => {console.log(`rodando na porta ${port}`)});
 
 
