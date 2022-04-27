@@ -203,20 +203,39 @@ section#message {
 }
 form fieldset{
     border:none;
+    margin:7px;
 }
 
 form fieldset#field_main label{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    color:white;
     border: 2px solid red;
     background-color: red;
+    border-radius: 8px;
 }
 
 fieldset#field_main legend{
     color:rgb(21, 0, 78);
 
 }
+
+form fieldset#field_main button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: red;
+    color:white;
+    border:none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width:100px;
+    height: 30px;
+}
+
 
 
 
