@@ -214,6 +214,8 @@ form fieldset#field_main label{
     border: 2px solid red;
     background-color: red;
     border-radius: 8px;
+    padding-left: 5px;
+  
 }
 
 fieldset#field_main legend{
