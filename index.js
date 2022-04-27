@@ -49,8 +49,8 @@ const pokemons = [
       img:"https://assets.pokemon.com/assets/cms2/img/pokedex/full/052.png",
       altura:'0.4',
       peso:'4.2kg',
-      categoria:'inseto',
-      habilidade:'voar'
+      categoria:'Scratch Cat',
+      habilidade:'Pick up'
     }
   ]
   let message =''
